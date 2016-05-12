@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="title_text_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#2bc0aa</item>
+    </style>
+
+    <style name="title_bar_style">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+    <style name="no_bg_title_bar_style">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <style name="common_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:padding">6.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="common_editor_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_box_height</item>
+        <item name="android:background">@drawable/shape_edit_corners_bg</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:drawablePadding">10.0dip</item>
+        <item name="android:textColor">@color/common_black_text</item>
+        <item name="android:textColorHint">@color/common_gray_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+    <style name="no_bg_editor_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_box_height</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:drawablePadding">10.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textColorHint">#ff898989</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <!-- 自定义Loading Dialog -->
+    <style name="loading_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--圆角弹窗-->
+    <style name="alertView" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/alert_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Widget.Design.AppBarLayout" parent="android:Widget">
+        <item name="elevation">0dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="share_dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

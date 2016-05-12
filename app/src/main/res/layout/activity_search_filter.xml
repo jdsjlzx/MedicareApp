@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="按类型"
+                android:textColor="@color/common_black_text"
+                android:textSize="@dimen/sp_18" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/type_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_36"
+                android:layout_marginRight="@dimen/dp_36"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <RadioButton
+                    android:id="@+id/course_radio_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/selector_btn_checkbox"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="@dimen/sp_18"
+                    android:text="课程类"
+                    />
+                <RadioButton
+                    android:id="@+id/article_radio_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/selector_btn_checkbox"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="@dimen/sp_18"
+                    android:text="文章类" />
+
+            </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="按时间"
+                android:textColor="@color/common_black_text"
+                android:textSize="@dimen/sp_18" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_box_height"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_22"
+            android:background="@drawable/shape_edit_corners_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="@string/start_date"
+                android:textColor="#ff898989"
+                android:textSize="@dimen/font_normal" />
+
+            <EditText
+                android:id="@+id/start_date_editor"
+                style="@style/no_bg_editor_style"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_box_height"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shape_edit_corners_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="@string/expiry_date"
+                android:textColor="#ff898989"
+                android:textSize="@dimen/font_normal" />
+
+            <EditText
+                android:id="@+id/expiry_date_editor"
+                style="@style/no_bg_editor_style"
+                android:inputType="none"
+                android:focusable="false" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/next"
+            style="@style/common_button_style"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/selector_common_corners_button"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>

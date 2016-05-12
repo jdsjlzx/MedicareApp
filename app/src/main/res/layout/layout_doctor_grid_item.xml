@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="@dimen/dp_14">
+
+    <com.nuoxin.enterprise.widget.CircleImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_user_avater"
+        app:border_color="@color/app_bg"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/common_black_text"
+        android:text="白求恩"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/hospital_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/gray_text"
+        android:text="河北省中医院"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/department_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/gray_text"
+        android:text="内分泌科"
+        android:singleLine="true" />
+</LinearLayout>

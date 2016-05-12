@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+
+    <string-array name="title_bar_labels">
+        <item>拇指营销</item>
+        <item>拇指营销</item>
+        <item>拇指营销</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="class_type_labels">
+        <item>微信</item>
+        <item>APP</item>
+        <item>网站</item>
+        <item>电话</item>
+    </string-array>
+
+    <string-array name="totalstatics">
+        <item>课程</item>
+        <item>文章</item>
+        <item>专业内容</item>
+    </string-array>
+</resources>

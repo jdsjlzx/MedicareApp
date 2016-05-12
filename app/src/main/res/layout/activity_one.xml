@@ -1,0 +1,432 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_text"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主讲人:"
+                            android:textColor="@color/gray_text"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_speaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray_text"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_meetingtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/gray_text"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="会议统计人数"
+                        android:textColor="@color/common_color"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_passrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_shap"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_signinrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/btn_shap"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:gravity="center">
+
+                    <com.nuoxin.enterprise.widget.CircleImageView
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/shap_white_bg"
+                        app:border_color="#fff"
+                        app:border_width="10dp" />
+
+
+                    <com.nuoxin.enterprise.widget.circleprogressview.CircleProgressView
+                        android:id="@+id/circleViewOut"
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:layout_gravity="center"
+                        CircleProgressView:cpv_barColor="#3FB8AF"
+                        CircleProgressView:cpv_barWidth="35dp"
+                        CircleProgressView:cpv_contourColor="#fff"
+                        CircleProgressView:cpv_contourSize="1dp"
+                        CircleProgressView:cpv_maxValue="100"
+                        CircleProgressView:cpv_rimColor="#D9F2EF"
+                        CircleProgressView:cpv_rimWidth="35dp"
+                        CircleProgressView:cpv_seekMode="false"
+                        CircleProgressView:cpv_textColor="#00796B"
+                        CircleProgressView:cpv_textSize="0dp"
+                        CircleProgressView:cpv_unit="%"
+                        CircleProgressView:cpv_unitColor="#009688" />
+
+
+                    <com.nuoxin.enterprise.widget.circleprogressview.CircleProgressView
+                        android:id="@+id/circleViewMiddle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        CircleProgressView:cpv_barColor="#7FC7AF"
+                        CircleProgressView:cpv_barWidth="35dp"
+                        CircleProgressView:cpv_contourColor="#fff"
+                        CircleProgressView:cpv_contourSize="1dp"
+                        CircleProgressView:cpv_maxValue="100"
+                        CircleProgressView:cpv_rimColor="#E5F4EF"
+                        CircleProgressView:cpv_rimWidth="35dp"
+                        CircleProgressView:cpv_seekMode="false"
+                        CircleProgressView:cpv_textColor="#00796B"
+                        CircleProgressView:cpv_textSize="0dp"
+                        CircleProgressView:cpv_unit="%"
+
+                        CircleProgressView:cpv_unitColor="#009688" />
+
+
+                    <com.nuoxin.enterprise.widget.circleprogressview.CircleProgressView
+                        android:id="@+id/circleViewInner"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        CircleProgressView:cpv_barColor="#DAD8A7"
+                        CircleProgressView:cpv_barWidth="30dp"
+                        CircleProgressView:cpv_contourColor="#fff"
+                        CircleProgressView:cpv_contourSize="1dp"
+                        CircleProgressView:cpv_maxValue="100"
+                        CircleProgressView:cpv_rimColor="#F7F7ED"
+                        CircleProgressView:cpv_rimWidth="30dp"
+                        CircleProgressView:cpv_seekMode="false"
+                        CircleProgressView:cpv_textColor="#00796B"
+                        CircleProgressView:cpv_textSize="0dp"
+                        CircleProgressView:cpv_unit="%"
+                        CircleProgressView:cpv_unitColor="#009688" />
+
+
+                    <TextView
+                        android:id="@+id/tv_percentOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="94dp"
+                        android:textColor="#3FB8AF"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_percentMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="64dp"
+                        android:textColor="#7FC7AF"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_percentInner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="34dp"
+                        android:textColor="#DAD8A7"
+                        android:textSize="11sp" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <com.nuoxin.enterprise.widget.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/shap_white_bg"
+                                app:border_color="#fff" />
+
+                            <com.nuoxin.enterprise.widget.circleprogressview.CircleProgressView
+                                android:id="@+id/circleViewApply"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                CircleProgressView:cpv_barColor="#DAD8A7"
+                                CircleProgressView:cpv_barWidth="4dp"
+                                CircleProgressView:cpv_contourColor="#fff"
+                                CircleProgressView:cpv_contourSize="1dp"
+                                CircleProgressView:cpv_maxValue="100"
+                                CircleProgressView:cpv_rimColor="#F7F7ED"
+                                CircleProgressView:cpv_rimWidth="4dp"
+                                CircleProgressView:cpv_seekMode="false"
+                                CircleProgressView:cpv_textColor="#DAD8A7"
+                                CircleProgressView:cpv_textSize="@dimen/sp_18"
+                                CircleProgressView:cpv_unit="%"
+                                CircleProgressView:cpv_unitColor="#009688" />
+
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="申请人数"
+                            android:textColor="@color/common_black_text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        >
+
+                        <FrameLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <com.nuoxin.enterprise.widget.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/shap_white_bg"
+                                app:border_color="#fff"
+                                app:border_width="2dp" />
+
+                            <com.nuoxin.enterprise.widget.circleprogressview.CircleProgressView
+                                android:id="@+id/circleViewPass"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                CircleProgressView:cpv_barColor="#7FC7AF"
+                                CircleProgressView:cpv_barWidth="4dp"
+                                CircleProgressView:cpv_contourColor="#fff"
+                                CircleProgressView:cpv_contourSize="1dp"
+                                CircleProgressView:cpv_maxValue="100"
+                                CircleProgressView:cpv_rimColor="#B2DFDB"
+                                CircleProgressView:cpv_rimWidth="4dp"
+                                CircleProgressView:cpv_seekMode="false"
+                                CircleProgressView:cpv_textColor="#7FC7AF"
+                                CircleProgressView:cpv_textSize="@dimen/sp_18"
+                                CircleProgressView:cpv_unit="%"
+                                CircleProgressView:cpv_unitColor="#009688" />
+
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="通过人数"
+                            android:textColor="@color/common_black_text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        >
+
+                        <FrameLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <com.nuoxin.enterprise.widget.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/shap_white_bg"
+                                app:border_color="#fff"
+                                app:border_width="2dp" />
+
+                            <com.nuoxin.enterprise.widget.circleprogressview.CircleProgressView
+                                android:id="@+id/circleViewSign"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                CircleProgressView:cpv_barColor="#3FB8AF"
+                                CircleProgressView:cpv_barWidth="4dp"
+                                CircleProgressView:cpv_contourColor="#fff"
+                                CircleProgressView:cpv_contourSize="1dp"
+                                CircleProgressView:cpv_maxValue="100"
+                                CircleProgressView:cpv_rimColor="#D9F2EF"
+                                CircleProgressView:cpv_rimWidth="4dp"
+                                CircleProgressView:cpv_seekMode="false"
+                                CircleProgressView:cpv_textColor="#65c6bf"
+                                CircleProgressView:cpv_textSize="@dimen/sp_18"
+                                CircleProgressView:cpv_text=""
+                                CircleProgressView:cpv_unit="%"
+                                CircleProgressView:cpv_unitColor="#5ec3bc" />
+
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="签到人数"
+                            android:textColor="@color/common_black_text" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="会议回看人数:"
+                    android:textColor="#606060"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_reviewcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#38C4B1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人"
+                    android:textColor="#606060"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

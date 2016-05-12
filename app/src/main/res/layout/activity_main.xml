@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tab_bg_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tab_one_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.nuoxin.enterprise.widget.GradientIconView
+                android:id="@+id/menu_home_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:bottom_icon="@mipmap/ic_menu_home"
+                app:top_icon="@mipmap/ic_menu_home_blue" />
+
+            <com.nuoxin.enterprise.widget.GradientTextView
+                android:id="@+id/menu_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/gray_text"
+                app:text_content="@string/tab_one"
+                app:text_size="12sp"
+                app:top_text_color="@color/common_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_content_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.nuoxin.enterprise.widget.GradientIconView
+                android:id="@+id/menu_content_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:bottom_icon="@mipmap/ic_menu_content"
+                app:top_icon="@mipmap/ic_menu_content_blue" />
+
+            <com.nuoxin.enterprise.widget.GradientTextView
+                android:id="@+id/menu_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/gray_text"
+                app:text_content="@string/tab_content"
+                app:text_size="12sp"
+                app:top_text_color="@color/common_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_two_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.nuoxin.enterprise.widget.GradientIconView
+                android:id="@+id/menu_doctor_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:bottom_icon="@mipmap/ic_menu_doctor"
+                app:top_icon="@mipmap/ic_menu_doctor_blue" />
+
+            <com.nuoxin.enterprise.widget.GradientTextView
+                android:id="@+id/menu_doctor_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/gray_text"
+                app:text_content="@string/tab_two"
+                app:text_size="12sp"
+                app:top_text_color="@color/common_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_three_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.nuoxin.enterprise.widget.GradientIconView
+                android:id="@+id/menu_me_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:bottom_icon="@mipmap/ic_menu_me"
+                app:top_icon="@mipmap/ic_menu_me_blue" />
+
+            <com.nuoxin.enterprise.widget.GradientTextView
+                android:id="@+id/menu_me_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/gray_text"
+                app:text_content="@string/tab_three"
+                app:text_size="12sp"
+                app:top_text_color="@color/common_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

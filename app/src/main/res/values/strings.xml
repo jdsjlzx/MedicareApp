@@ -1,0 +1,96 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">拇指营销中心</string>
+
+    <string name="tab_one">项目</string>
+    <string name="tab_two">医生</string>
+    <string name="tab_three">我的</string>
+    <string name="tab_content">内容</string>
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="login">登录</string>
+    <string name="mobile">手机号</string>
+    <string name="mobile_hint">输入手机号码</string>
+    <string name="login_password">登录密码</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="mobile_error">手机号格式有误，请重新输入</string>
+    <string name="psw_error">请输入密码</string>
+    <string name="login_error">账号或密码错误，请重新输入</string>
+    <string name="register">注册</string>
+    <string name="register_tip">新用户</string>
+    <string name="agree">我已阅读并同意</string>
+    <string name="protocol_name">使用条款和隐私政策</string>
+    <string name="next">下一步</string>
+    <string name="register_success">注册成功</string>
+    <string name="resend_verify_code">重新发送(<xliff:g id="kk">%s</xliff:g>)</string>
+    <string name="agree_error">您还未同意服务条款!</string>
+    <string name="switch_to_login">直接登录</string>
+    <string name="register_with_another_mobile">使用其他号码注册</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="registered_warning">号码\"%s\"已经注册过GBank，请尝试</string>
+    <string name="receive_sms_verify">验证码已发送到手机 \"%s\"</string>
+    <string name="send_sms_verify_prefix">已经发送</string>
+    <string name="send_sms_verify_redtext">“短信校验码”</string>
+    <string name="send_sms_verify_suffix">到</string>
+    <string name="input_sms_verify_hint">短信验证码</string>
+    <string name="reget_sms_verify">重新获取校验码</string>
+    <string name="sms_verify_sended">校验码已发送（%d秒）</string>
+    <string name="left_bracket">（</string>
+    <string name="right_bracket">）</string>
+    <string name="error_sms_verify">校验码输入错误，请重新尝试（剩余%d次）</string>
+    <string name="set_psw">设置密码(6&#8211;16个字符)</string>
+    <string name="confirm_psw">验证密码(6&#8211;16个字符)</string>
+    <string name="psw_conflict">两次输入的密码不一致，请重新输入</string>
+    <string name="login_out">注销当前帐号</string>
+
+    <string name="old_psw">原密码</string>
+    <string name="new_pay_psw">新密码</string>
+    <string name="confirm_pay_psw">确认密码</string>
+    <string name="security_verify">安全验证</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="commit">提交</string>
+    <string name="login_psw_modify">登录密码修改</string>
+    <string name="pay_psw_hint">请输入6–16位密码</string>
+    <string name="new_psw_empty">请输入6–16位新密码</string>
+    <string name="new_psw_length_error">密码长度必须为6–16位</string>
+    <string name="confirm_input_new_psw">请确认输入新密码</string>
+    <string name="confirm_input_psw_hint">请再次输入密码</string>
+    <string name="psw_hint">请输入密码</string>
+    <string name="forgot_psw">忘记密码？</string>
+    <string name="random_psw_login">随机密码登录</string>
+    <string name="weibo_login">微博账号登录</string>
+    <string name="set_psw_finished">设置密码完成</string>
+    <string name="set_psw_notice">恭喜您，密码设定成功！</string>
+
+    <string name="reset_password">重新设置密码</string>
+    <string name="reset_password_success">恭喜您，密码重设成功！</string>
+    <string name="new_password">新密码</string>
+    <string name="new_password_notice">6–16个字符，区分大小写</string>
+    <string name="forgot_psw_title">找回密码</string>
+
+    <string name="user_id">工号</string>
+    <string name="user_email">邮箱</string>
+    <string name="user_mobile">手机号码</string>
+    <string name="user_department">所属部门</string>
+    <string name="start_date">开始日期</string>
+    <string name="expiry_date">截止日期</string>
+    <string name="filter">筛选</string>
+    <string name="confirm">确定</string>
+
+    <string name="input_mailbox">请输入您的邮箱</string>
+    <string name="recover_passwords">找回密码</string>
+    <string name="mail_tip">新密码将发送到您的邮箱,请确认。\n</string>
+    <string name="recover_passwords_success">新密码已发送,\n请到您的邮箱查看</string>
+    <string name="involved_project">参与项目</string>
+    <string name="welcome_tip">欢迎来到拇指营销中心</string>
+
+    <string name="share_not_support">不支持分享</string>
+    <string name="share_tips">已选择了%d位客户</string>
+</resources>
